@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+
+/* Top_Menu */
+#bk {
+	background: url(../img/bk.jpg) repeat scroll 0% 0%;
+	height: 20vh;
+}
+#top_menu {
+	height: 100px;
+	font-family: 'Arvo', serif;
+}
+#navbar {
+	margin: 40px 0;
+	font-size: 20px;
+	text-align: right;
+}
+#navbar>ul>li {
+	list-style: none;
+	display: inline;
+	margin-right: 30px;
+	position: relative;
+}
+#navbar>ul>li:hover #line {
+	width: 100%;
+}
+
+#navbar>ul>li>a {
+	text-decoration: none;
+	color: black;
+}
+
+#line {
+	background-color: black;
+	height: 3px;
+	width: 0;
+	position: absolute;
+	top: 23px;
+	left: 0;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+/* Slider */
+#slider {
+	margin-top: 50px;
+}
+
+/* Content */
+
+#content {
+	margin-top:100px;
+	text-align: center;
+	height: 500px;
+	font-family: 'Arvo', serif;
+}
+
+#imgsh {
+	width: 200px;
+}
+/* Footer */
+
+footer>ul>li {
+	display: inline;
+	margin-right: 20px;
+
+}
+#copyright {
+	text-align: right;
+	margin-right: 50px;
+}
+footer {
+	margin-top: 570px;
+	background: url(../img/bottbk.jpg) repeat scroll 0% 0%;
+	height: 20vh;
+}

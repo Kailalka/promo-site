@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<link href="{% static 'css/fotorama.css' %}" rel="stylesheet">
+  	<script src="{% static 'js/fotorama.js' %}"></script>
+</head>
+<body>
+<div id="bk">
+<div class="container">
+	<div class="row">
+	<div id="wrapper" class="col-md-offset-1 col-md-10">
+
+		<div id="top_menu">
+			<div id="logo" class="col-md-4 col-xs-4">
+				<h2>Oleg Isaev</h2>
+				<h4>Professional Photographer</h4>
+			</div>
+			<div id="navbar" class="col-md-8 col-xs-8">
+				<ul>
+					<li><a href="#"><div id="line"></div>Home</a></li>
+					<li><a href="#"><div id="line"></div>About me</a></li>
+					<li><a href="#"><div id="line"></div>Blog</a></li>
+					<li><a href="#"><div id="line"></div>Contacts</a></li>
+				</ul>
+			</div>
+		</div><hr>
+
+			{% block content %}
+			{% endblock %}
+
+		<footer>
+			<hr>
+			<ul class="col-md-4">
+			<li><a href=""><img src="{% static 'img/vk.png' %}" width="30px"></a></li>
+			<li><a href=""><img src="{% static 'img/inst.png' %}" width="28px"></a></li>
+			<li><a href=""><img src="{% static 'img/fb.png' %}" width="27px"></a></li>
+			<h5>olegphotographer@gmai.com</h5>
+			</ul>
+			<div id="copyright" class="class="col-md-8""><h5>&copy copyright 2017</h5></div>
+		</footer>
+	</div>
+	</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

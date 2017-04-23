@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div id="slider" class="col-md-8 col-md-offset-2">
+		<div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+  			<img src="{% static 'img/1.jpg' %}">
+  			<img src="{% static 'img/2.jpg' %}">
+  			<img src="{% static 'img/3.jpg' %}">
+  			<img src="{% static 'img/4.jpg' %}">
+		</div>
+			
+		</div>
+
+		<div id="content">
+			<div id="quote" class="col-md-offset-1 col-md-11">
+				<hr><h2>Удел фотографа — непрерывно исчезающие вещи. И когда они уходят, никакая изобретательность, ничто на свете не заставит их вернуться.<h2><hr>
+			</div>
+
+			<div id="content_block_1" class="col-md-8">
+				<h3>Last works</h3>
+				<hr>
+				<div id="imgsh" class="col-md-4"><img src="{% static 'img/4.jpg' %}"></div>
+			</div>
+
+
+			<div id="content_block_3" class="col-md-4">
+				<h3>New from blog</h3>
+				<hr>
+				<a href="#"><h4>Title<small> date</small></h4></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum urna eu vestibulum aliquam. Curabitur bibendum risus...
+				</p>
+				<a href="#"><h4>Title<small> date</small></h4></a>
+				<p>
+				Maecenas blandit est quis bibendum faucibus. Fusce egestas eros sagittis suscipit ultricies. Suspendisse nec efficitur lorem...
+				</p>
+				<a href="#"><h4>Title<small> date</small></h4></a>
+				<p>
+				porttitor. Donec velit ex, mattis tristique purus vel, viverra accumsan lorem. Nulla tristique posuere malesuada...
+				</p>
+			</div>
+
+			
+</div>
+
+{% endblock %}
